@@ -1,8 +1,8 @@
 ## LM_ConfoundRemove_Short.R
 
 options(stringsAsFactors = FALSE)
-setwd("C:/Users/jillh/Dropbox/GitHub/RNAseq/")
-load("C:/Users/jillh/Dropbox/DHGLab/commonmind/FinalProcData_CM.RData")
+setwd("C:/Users/me/GitHub/RNAseq/")
+load("C:/Users/me/GitHub/RNAseq/commonmind/FinalProcData_CM.RData")
 
 datMeta$Dx <- factor(datMeta$Dx, levels=c("Control","BP","SCZ"))
 datMeta$Ethnicity <- factor(datMeta$Ethnicity, levels=c("Caucasian","African-American","Hispanic","Asian"))
