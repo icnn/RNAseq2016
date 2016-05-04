@@ -1,7 +1,10 @@
-### Covariate Plots - want to look at relationship of specific factors in datMeta with Diagnosis
+## FindConfounds.R
+## Script to make covariate Plots - want to look at relationship of specific factors in datMeta with Diagnosis
+## Thanks and credit to Neel Parikshak and Michael Gandal for original work done with this script
 
 ## Load your datMeta
 
+options(stringsAsFactors = FALSE)
 load("FinalProcData_CM.RData")
 
 pdf(file="datMeta_Covariates.pdf")

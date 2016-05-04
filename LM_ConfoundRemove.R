@@ -1,8 +1,9 @@
-## LM_ConfoundRemove_Short.R
+## LM_ConfoundRemove.R
+## Script to remove confounds from a linear model and calculate differential expression
+## Thanks and credit to Neel Parikshak for original work done with this script
 
 options(stringsAsFactors = FALSE)
-setwd("C:/Users/me/GitHub/RNAseq/")
-load("C:/Users/me/GitHub/RNAseq/commonmind/FinalProcData_CM.RData")
+load("FinalProcData_CM.RData")
 
 datMeta$Dx <- factor(datMeta$Dx, levels=c("Control","BP","SCZ"))
 datMeta$Ethnicity <- factor(datMeta$Ethnicity, levels=c("Caucasian","African-American","Hispanic","Asian"))
