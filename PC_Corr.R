@@ -3,7 +3,7 @@
 ## Thanks and credit to Neel Parikshak and Michael Gandal for original work done with this script
 
 options(stringsAsFactors = FALSE)
-load(file="rlogNorm_OutlierRemovedData_CM.RData")
+load(file="rlogNorm_OutlierRemovedData_CMshort.RData")
 
 thisdat <- t(scale(t(datExpr),scale=F)) 
 ## Centers the mean of all genes - this means the PCA gives us the eigenvectors of the geneXgene covariance matrix, allowing us to assess the proportion of variance each component contributes to the data
@@ -64,5 +64,5 @@ dev.off()
 datMeta <- cbind(datMeta,topPC.datSeq)
 ## Use seqStats in your linear model
 
-save(datExpr,datMeta,datSeq,file="FinalProcData_CM.RData")
+save(datExpr,datMeta,datSeq,file="FinalProcData_CMshort.RData")
 
